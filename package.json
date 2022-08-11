@@ -1,0 +1,17 @@
+{
+  "name": "Bootstraped",
+  "version": "1.0.0",
+  "description": "Auto genrated project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sébastien larcher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
