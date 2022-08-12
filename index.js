@@ -1,6 +1,7 @@
 const http = require("http");
 const app = require("./app.js");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || "localhost";
 const server = http.createServer(app);
 
 server.on("error", function(err) {
@@ -10,9 +11,8 @@ server.on("error", function(err) {
 server.on("listening", function() {
     console.log("server is listening on")
     console.table({
-        host: process.env.HOST,
+        host: HOST,
         port: PORT
     })
 })
-console.log(server)
 server.listen(PORT)
