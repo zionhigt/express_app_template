@@ -4,5 +4,6 @@
 # Place this script at {workspace}/.git/hooks/pre-commit
 set -e
 
+npm run test
 docker build -t node-express:latest .
 echo 'Docker image build with tag node-express:latest'
