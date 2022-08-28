@@ -2,3 +2,8 @@
 Dockerfile
 Dockerrun.sh
 .gitignore
+.dockerignore
+node_modules
+README.md
+pre-commit-sample
+.env-template
