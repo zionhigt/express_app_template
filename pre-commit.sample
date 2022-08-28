@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# A pre-commit script to build new docker app image before commit changes.
+# Place this script at {workspace}/.git/hooks/pre-commit
+set -e
+
+docker build -t node-express:latest .
+echo 'Docker image build with tag node-express:latest'
