@@ -5,5 +5,5 @@ Dockerrun.sh
 .dockerignore
 node_modules
 README.md
-pre-commit-sample
+pre-commit.sample
 .env-template
