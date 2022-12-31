@@ -4,16 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Oleo+Script:wght@700&family=Train+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Seb Dev [PORTFOLIO]</title>
 </head>
-<body style="font-family: sans-serif; overflow: hidden;">
-    <div style="display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; width: 100vw; height: 100vh">
-        <div style="padding: 1.5rem; box-shadow: -0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25); width: 225px; height: 225px">
-            <img style="object-fit: cover;" src="/images/index.png" alt="Node JS">
+<body class="loading">
+    <div class="loader">
+        <div class="icon">
+            <i class="fa-sharp fa-solid fa-circle-notch"></i>
         </div>
-        <h1>Templated APP</h1>
     </div>
-    <script type="module" src="./js/index.js"></script>
+    <header>
+        <div class="logo">
+            <a href="/" class="logo--link"></a>
+            <img src="/assets/images/logo.png" alt="Logo seb dev">
+        </div>
+        <div class="title">
+            <h1 class="main-title">Seb Dev</h1>
+            <div class="script"></div>
+        </div>
+        <ul>
+            <li><a href="/#contact"><span>Contact</span></a></li>
+            <li><a href="/pages/technical_stack.html"><span>Ma stack technique</span></a></li>
+            <li><a href="/pages/projects.html"><span>Mes projets</span></a></li>
+            <li><a href="/pages/mention_legales.html"><span>Mention légales</span></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <section class="view">
+                <div class="center">
+                    <img src="./assets/images/together.svg" alt="Web illustrations by Storyset, développement backend">
+                </div>
+            </section>
+            <section id="myJob" class="view grid">
+                <div class="left paragraphe">
+                    <h3 class="title">Mon métier</h3>
+                    <p>
+                        Un développeur Web est une personne qui crée des sites Web et des applications à partir de zéro. L'appellation "développeur Web" est un terme générique qui englobe à la fois les développeurs front-end et les développeurs back-end. Essentiellement, le front-end est la partie d'un site Web que les utilisateurs voient et avec laquelle ils interagissent. Le back-end fait référence à la partie d'un site Web qui génère et gère des données. La création de sites Web et d'applications est un domaine passionnant car il offre une liberté de création et une mobilité illimitées. De plus, les opportunités dans ce domaine sont nombreuses puisque l'industrie technologique est en pleine expansion.
+                    </p>
+                </div>
+                <div class="right paragraphe">
+                    <img src="./assets/images/Developer-activity-bro-custom.svg" alt="Web illustrations by Storyset, développement backend">
+                </div>
+            </section>
+            <section id="web" class="view grid">
+                <div class="left paragraphe">
+                    <img src="./assets/images/amigo.svg" alt="Web illustrations by Storyset, développement frontend">
+                </div>
+                <div class="right paragraphe">
+                    <h3 class="title">Intégration Web</h3>
+                    <figure>
+                        <figcaption>
+                            <strong>Un jour, j'ai dérapé sur CTRL+u</strong>
+                            <p>
+                                Graçe à ma maîtrise des standards du Web 2.0, je donne vie à vos designs numériques.
+                                Avec des éléments organiques et leurs animations aux performances optimal, une interface Web sécurisée et une modularitée à toutes épreuves. Offrez une expérience unique à vos utilisateurs. 
+                            </p>
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+            </section>
+            <section id="interactService" class="view grid">
+                <div class="left paragraphe">
+                    <h3 class="title">Service intéractifs</h3>
+                    <p>
+                        Dinamisez votre présences sur le net avec des services web sur mesures. API, backoffice, scripts d'automatisations. Bénéficiez des avantages du numérique pour améliorer votre productivitée.
+                    </p>
+                </div>
+                <div class="right paragraphe">
+                    <img src="./assets/images/backend.svg" alt="Web illustrations by Storyset, développement backend">
+                </div>
+            </section>
+            <section id="security" class="view grid">
+                <div class="left paragraphe">
+                    <img src="./assets/images/attack.svg" alt="Web illustrations by Storyset, développement frontend">
+                </div>
+                <div class="right paragraphe">
+                    <h3 class="title">Sécurité</h3>
+                    <figure>
+                        <blockquote cite="https://www.huxley.net/bnw/four.html">
+                            <p><strong>The OWASP<sup>®</sup> Foundation</strong> works to improve the security of software through its community-led open source software projects,
+                                hundreds of chapters worldwide, tens of thousands of members, and by hosting local and global conferences.</p>
+                        </blockquote>
+                        <figcaption>—OWASP Foundation, the Open Source Foundation for Application Security <cite><a href="https://owasp.org/">| OWASP Foundation</a></cite></figcaption>
+                    </figure>
+                    <p>
+                        <strong>L'important est de bien s'entourer !</strong><br/>
+                        Je me tiens sans cesse informé des dernières actualités pour prévenir au mieux les risques sur les systèmes que je développe.
+                        Je garantis votre sécurité et celle de vos visiteurs.
+                    </p>
+                </div>
+            </section>
+            <section id="contact" class="view grid">
+                <div class="left paragraphe align-top">
+                    <h3 class="title">Contactez moi</h3>
+                    <div>
+                        <h5 id="messageLabel">Laisser moi un message publique</h5>
+                    </div>
+                    <form id="formContact" action="/messages" method="POST">
+                        <div class="form__body">
+                            <div class="form-group">
+                                <label for="inputObj">Votre nom : </label>
+                                <input type="text" class="form-control" id="inputObj" aria-describedby="emailHelp" placeholder="Seb" name="name"/>
+                                <small class="text-info">Ce nom apparaît publiquement</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMessage">Laissez votre message : </label>
+                                <textarea type="text" class="form-control" id="inputMessage" name="message" aria-describedby="message" placeholder="Bonjour, "></textarea>
+                            </div>
+                            <div class="form-group">
+                                <span>Noter le site : </span>
+                                <div class="stars">
+                                    <input id="rate" type="hidden" value="0" name="rate">
+                                    <input id="star1" type="checkbox" class="rate__stars d-none">
+                                    <label for="star1"><i class="fa-solid fa-star"></i></label>
+                                    <input id="star2" type="checkbox" class="rate__stars  d-none">
+                                    <label for="star2"><i class="fa-solid fa-star"></i></label>
+                                    <input id="star3" type="checkbox" class="rate__stars  d-none">
+                                    <label for="star3"><i class="fa-solid fa-star"></i></label>
+                                    <input id="star4" type="checkbox" class="rate__stars  d-none">
+                                    <label for="star4"><i class="fa-solid fa-star"></i></label>
+                                    <input id="star5" type="checkbox" class="rate__stars  d-none">
+                                    <label for="star5"><i class="fa-solid fa-star"></i></label>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" value="Envoyer"></button>
+                            </div>
+                            <div>
+                                <span>Ou un message privé à : </span>
+                                <a href="mailto://larcher501@gmail.com?subject=seb-dev.tech&amp;body=Bonjour%20Sébastien,%0D%0A">larcher501@gmail.com</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="right paragraphe">
+                    <img src="./assets/images/Feedback-rafiki.svg" alt="Web illustrations by Storyset, développement frontend">
+                </div>
+            </section>
+            <section id="messages" class="view grid d-none">
+                <div class="right paragraphe">
+                    <h3 class="title">Messages de visiteurs</h3>
+                    <img src="./assets/images/Work_chat-cuate.svg" alt="Web illustrations by Storyset, développement frontend">
+                </div>
+                <div class="left paragraphe messages__paragraphe">
+                    <div class="content"></div>
+                </div>
+            </section>
+            <!-- Hack to extend <main> when messages was displayed -->
+            <span style="height: 100px;"></span>
+        </div>
+    </main>
+    <footer>
+        <ul class="text-light row text-md-center">
+            <li class="col-12 col-sm-6 col-md-4 mb-3">
+                <span>A propos</span>
+                <ul>
+                    <li>
+                        <a id="footerContBtn" href="#contact" class="text-info">Contact</a>
+                    </li>
+                    <li><a href="/mentions-legales.html" class="text-info">Mentions légales</a></li>
+                </ul>
+                
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-3">
+                <span>Plan du site</span>
+                <ul>
+                    <li><a href="#myJob" class="text-info">Mon métier</a></li>
+                    <li><a href="#web" class="text-info">Intégration Web</a></li>
+                    <li><a href="#interactService" class="text-info">Services intéractifs</a></li>
+                    <li><a href="#security" class="text-info">Sécurité</a></li>
+                    <li><a href="#contact" class="text-info">Contactez moi</a></li>
+                    <li><a href="#messages" class="text-info">Messages de visiteurs</a></li>
+                </ul>
+                
+            </li>
+            <li class="col-12 col-sm-6 col-md-4 mb-3">
+                <span>Crédits images: </span>
+                <ul>
+                    <li><a href="https://storyset.com/web">Web illustrations by Storyset</a>
+                </ul>
+            
+            </li>
+        </ul>
+    </footer>
+    <script src="/dist/jquery/dist/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
