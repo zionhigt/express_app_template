@@ -1,0 +1,20 @@
+{
+  "name": "Portfolio",
+  "description": "Introduce myself",
+  "main": "index.js",
+  "authors": [
+    "Sébastien larcher"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zionhigt/express_app_template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
