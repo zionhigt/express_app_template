@@ -4,6 +4,8 @@ Dockerrun.sh
 .gitignore
 .dockerignore
 node_modules
+node_modules
+bower_components
 README.md
 pre-commit.sample
 .env-template
