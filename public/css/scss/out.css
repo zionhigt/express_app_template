@@ -1,0 +1,21 @@
+.messages__stars--1:nth-child(1n) i {
+  color: rgb(255, 208, 0);
+}
+
+.messages__stars--2:nth-child(2n) i {
+  color: rgb(255, 208, 0);
+}
+
+.messages__stars--3:nth-child(3n) i {
+  color: rgb(255, 208, 0);
+}
+
+.messages__stars--4:nth-child(4n) i {
+  color: rgb(255, 208, 0);
+}
+
+.messages__stars--5:nth-child(5n) i {
+  color: rgb(255, 208, 0);
+}
+
+/*# sourceMappingURL=out.css.map */
