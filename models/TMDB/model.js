@@ -39,9 +39,8 @@ class TMDB{
      */
     buildParams(params, head=false) {
         const startChr = head ? "?":"&";
-        const queryString = startChr + Object.entries(params).map(function(kv) {
-            return kv.join("=");
-        }).join("&");
+        params = new URLSearchParams(params);
+        const queryString = startChr + params.toString();
         return encodeURI(queryString);
     }
     /**
