@@ -36,6 +36,7 @@ class Messages {
                 })
             }
         } catch(err) {
+            console.error(err);
             throw err;
         }
     }
@@ -49,6 +50,7 @@ class Messages {
                 return this.getPostedMessages();
             }
         } catch(err) {
+            console.error(err);
             throw err;
         }
         
