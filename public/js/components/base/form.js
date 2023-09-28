@@ -1,6 +1,6 @@
 import api from "./api.js";
 
-export default {
+export const form = {
     api,
     getBody: function(form) {
         const formData = new FormData(form);
@@ -32,4 +32,26 @@ export default {
         const postUrl = form.getAttribute("action");
         return this.api.send(new Request(postUrl, options));
     }
+
 }
+$("#formContact").on("submit", async function(event) {
+    event.preventDefault();
+    function submitForm(_form) {
+        const confirmPublish = confirm("En publiant ce message vous acceptez de l'exposer à la vue de tous les visiteurs de ce site !");
+        if(!confirmPublish) return Promise.reject(new Error("Annulé par l'utilisateur"));
+        return form.submit(_form);
+    }
+    try {
+        const messages = await submitForm(event.currentTarget);
+        if(!!messages) {
+            //await message.refreshMessages()
+            document.dispatchEvent(
+                new CustomEvent("message@trigger_refresh")
+            )
+            return 0;
+        }
+    } catch (err) {
+        console.error(err);
+        return 1;
+    }
+});
