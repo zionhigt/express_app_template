@@ -13,3 +13,4 @@ models/data/messages.json
 portfolio-start.sh
 .env
 .env-test
+data/
